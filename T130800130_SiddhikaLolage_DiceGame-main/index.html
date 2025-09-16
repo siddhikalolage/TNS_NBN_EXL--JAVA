@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎲 Simple Dice Game</h1>
+        <p>Each player rolls once. Highest number wins!</p>
+
+        <div class="game-area">
+            <div class="players">
+                <div class="player" id="player1">
+                    <h2>Player 1</h2>
+                    <div class="dice" id="dice1">🎲</div>
+                    <div class="result" id="result1">-</div>
+                    <div class="wins">Wins: <span id="wins1">0</span></div>
+                </div>
+
+                <div class="player" id="player2">
+                    <h2>Player 2</h2>
+                    <div class="dice" id="dice2">🎲</div>
+                    <div class="result" id="result2">-</div>
+                    <div class="wins">Wins: <span id="wins2">0</span></div>
+                </div>
+
+                <div class="player" id="player3">
+                    <h2>Player 3</h2>
+                    <div class="dice" id="dice3">🎲</div>
+                    <div class="result" id="result3">-</div>
+                    <div class="wins">Wins: <span id="wins3">0</span></div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="current-player" id="currentPlayer">Player 1's Turn</div>
+                <button id="rollBtn" onclick="rollDice()">Roll Dice</button>
+                <button id="newGameBtn" onclick="newGame()" style="display:none;">New Game</button>
+            </div>
+
+            <div class="winner" id="winner"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
